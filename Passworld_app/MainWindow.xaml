@@ -7,12 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920">
     <Canvas>
-        <Button
-            Background="Red"
-            Foreground="AntiqueWhite"
-            Canvas.Left="710" Canvas.Top="290"
-            Height="500" Width="500"
-            FontSize="90"
-        >HI</Button>
+        Background="#383838"
+        <TextBox>
+            <TextBox.Resources>
+                <Style TargetType="TextBox">
+                    <Setter Property="CornerRadius" Value="69"></Setter>
+                </Style>
+            </TextBox.Resources>
+            Background="#626262"
+            Width="990" Height="60"
+            Canvas.Top="" Canvas.Left=""
+        </TextBox>
+        <TextBlock
+            Foreground="#A0A0A0"
+            Canvas.Top="211.19" Canvas.Left="115"
+            Height="34.58" Width="256"
+            FontSize="30"
+            FontFamily="Space Grotesk"
+        >Search password</TextBlock>
     </Canvas>
 </Window>

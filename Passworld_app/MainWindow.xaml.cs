@@ -24,6 +24,20 @@ namespace Passworld_app
         {
             InitializeComponent();
         }
-        
+        public void YourGotFocusEvent(object sender, RoutedEventArgs e)
+        {
+            SearchPassword.Text = string.Empty;
+            SearchPassword.GotFocus -= YourGotFocusEvent;
+            if (SearchPassword.IsFocused == false && string.IsNullOrWhiteSpace(SearchPassword.Text))
+            {
+                SearchPassword.Text = "Search Password";
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            H.Text = "H";
+        }
+
     }
 }

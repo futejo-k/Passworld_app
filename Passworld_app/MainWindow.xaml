@@ -5,25 +5,85 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Passworld_app"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920">
-    <Canvas>
-        Background="#383838"
-        <TextBox>
-            <TextBox.Resources>
-                <Style TargetType="TextBox">
-                    <Setter Property="CornerRadius" Value="69"></Setter>
-                </Style>
-            </TextBox.Resources>
-            Background="#626262"
-            Width="990" Height="60"
-            Canvas.Top="" Canvas.Left=""
-        </TextBox>
-        <TextBlock
+        Width="{x:Static SystemParameters.MaximizedPrimaryScreenWidth}"  
+        Height="{x:Static SystemParameters.MaximizedPrimaryScreenHeight}" 
+        Title="MainWindow" WindowState="Maximized">
+    <Canvas Background="#383838">
+        <Image
+            Source="img/passworld_white_bick.png"
+            Canvas.Top="12"
+            Canvas.Left="75"
+            Height="169"
+            Width="400"
+        ></Image>
+        <TextBox
+            Canvas.Top="215"
+            Canvas.Left="75"
             Foreground="#A0A0A0"
-            Canvas.Top="211.19" Canvas.Left="115"
-            Height="34.58" Width="256"
+            Background="#626262"
+            Width="750"
+            Height="60"
             FontSize="30"
-            FontFamily="Space Grotesk"
-        >Search password</TextBlock>
+            Name="SearchPassword" Text="Search Password"
+            GotFocus="YourGotFocusEvent"
+            HorizontalAlignment="Center"
+            BorderBrush="#848484"
+        ></TextBox>
+        <Button  Width="60" Height="60" Canvas.Top="215" Canvas.Right="75">
+            <Button.ClickMode>Press</Button.ClickMode>
+            <Image
+                Source="img/new.png"
+                Height="35"
+                Width="35"
+            ></Image>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse>
+                            <Ellipse.Fill>
+                                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                    <GradientStop Color="#158A67" Offset="0.0"/>
+                                    <GradientStop Color="#07D635" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock
+            Canvas.Top="69"
+            Canvas.Left="42"
+            Foreground="White"
+            FontSize="34"
+            Name="H"
+            ></TextBlock>
+        <ListBox
+            Canvas.Top="305"
+            Canvas.Left="75"
+            Height="475"
+            Width="1400"
+            Background="#4A4A4A"
+            BorderBrush="#848484"
+        ></ListBox>
     </Canvas>
 </Window>
+
+
+
+
+<!--
+<Border CornerRadius="69" BorderThickness="0" BorderBrush="#A0A0A0">
+            <TextBox
+                Canvas.Top="211"
+                Canvas.Left="115"
+                Background="#626262"
+                Foreground="#A0A0A0"
+                BorderThickness="1"
+                Width="990" Height="60"
+                FontSize="30"
+                Name="txtContents">Search password</TextBox>
+        </Border>
+        <Border CornerRadius="5" BorderThickness="1" BorderBrush="Black" Margin="91,192,150,79"></Border>
+-->

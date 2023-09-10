@@ -18,12 +18,13 @@ namespace Passworld_app
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Homepage : Window
     {
-        public MainWindow()
+        public Homepage()
         {
             InitializeComponent();
         }
+        
         public void YourGotFocusEvent(object sender, RoutedEventArgs e)
         {
             SearchPassword.Text = string.Empty;
@@ -33,11 +34,10 @@ namespace Passworld_app
                 SearchPassword.Text = "Search Password";
             }
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        
+        private void NewPwd_OnClick(object sender, RoutedEventArgs e)
         {
-            H.Text = "H";
+            
         }
-
     }
 }

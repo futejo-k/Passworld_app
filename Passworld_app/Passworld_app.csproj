@@ -7,4 +7,17 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Refit" Version="7.0.0" />
+      <PackageReference Include="Refit.HttpClientFactory" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="img\passworld_white_bick.png" />
+      <Content Include="img\passworld_white_bick.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="img\new.png" />
+    </ItemGroup>
+
 </Project>

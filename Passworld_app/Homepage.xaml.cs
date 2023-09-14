@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,17 +28,13 @@ namespace Passworld_app
         
         public void YourGotFocusEvent(object sender, RoutedEventArgs e)
         {
-            SearchPassword.Text = string.Empty;
-            SearchPassword.GotFocus -= YourGotFocusEvent;
-            if (SearchPassword.IsFocused == false && string.IsNullOrWhiteSpace(SearchPassword.Text))
-            {
-                SearchPassword.Text = "Search Password";
-            }
+            
         }
         
         private void NewPwd_OnClick(object sender, RoutedEventArgs e)
         {
-            
+            NewPwd newPass = new NewPwd();
+            this.Content = newPass.Content;
         }
     }
 }

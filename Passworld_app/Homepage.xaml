@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Width="{x:Static SystemParameters.MaximizedPrimaryScreenWidth}"  
         Height="{x:Static SystemParameters.MaximizedPrimaryScreenHeight}" 
-        Title="MainWindow" WindowState="Maximized">
+        Title="Homepage | Passworld" WindowState="Maximized">
     <Canvas Background="#383838">
         <Image
             Source="img/passworld_white_bick.png"
@@ -25,11 +25,16 @@
             Width="750"
             Height="60"
             FontSize="30"
-            Name="SearchPassword" Text="Search Password"
             GotFocus="YourGotFocusEvent"
             HorizontalAlignment="Center"
             BorderBrush="#848484"
         ></TextBox>
+        <TextBlock
+            Canvas.Top="223"
+            Canvas.Left="115"
+            Foreground="#A0A0A0"
+            FontSize="30"
+        >Search Password</TextBlock>
         <Button 
             Width="60"
             Height="60"
@@ -40,8 +45,8 @@
             x:Name="NewPwd">
             <Image
                 Source="img/new.png"
-                Height="45"
-                Width="45"
+                Height="40"
+                Width="40"
             ></Image>
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">

@@ -2,8 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Passworld_app"
-             StartupUri="Homepage.xaml">
+             StartupUri="NewPwd.xaml">
     <Application.Resources>
-         
+	    <FontFamily x:Key="SpaceGroteskBold">/Fonts/SpaceGrotesk-Bold.ttf#Space Grotesk</FontFamily>
+	    <FontFamily x:Key="SpaceGroteskLight">/Fonts/SpaceGrotesk-Light.ttf#Space Grotesk</FontFamily>
     </Application.Resources>
 </Application>

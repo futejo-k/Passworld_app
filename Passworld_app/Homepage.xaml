@@ -1,13 +1,13 @@
 ﻿<Window x:Class="Passworld_app.Homepage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Passworld_app"
-        mc:Ignorable="d"
-        Width="{x:Static SystemParameters.MaximizedPrimaryScreenWidth}"  
-        Height="{x:Static SystemParameters.MaximizedPrimaryScreenHeight}" 
-        Title="Homepage | Passworld" WindowState="Maximized">
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      Title="Homepage | Passworld" 
+      Height="{x:Static SystemParameters.MaximizedPrimaryScreenHeight}"
+      Width="{x:Static SystemParameters.MaximizedPrimaryScreenWidth}"
+      WindowState="Maximized">
     <Canvas Background="#383838">
         <Image
             Source="img/passworld_white_bick.png"
@@ -34,6 +34,7 @@
             Canvas.Left="115"
             Foreground="#A0A0A0"
             FontSize="30"
+            FontFamily="Space Grotesk"
         >Search Password</TextBlock>
         <Button 
             Width="60"

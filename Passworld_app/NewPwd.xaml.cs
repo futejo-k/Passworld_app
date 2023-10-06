@@ -3,7 +3,7 @@ using System.Windows.Controls;
 
 namespace Passworld_app;
 
-public partial class NewPwd : Page
+public partial class NewPwd : Window
 {
     public NewPwd()
     {
@@ -12,7 +12,8 @@ public partial class NewPwd : Page
     
     private void Back_OnClick(object sender, RoutedEventArgs e)
     {
-        Homepage homepage = new Homepage();
-        this.Content = homepage.Content;
+        this.Hide();
+        (new Homepage()).Show();
+        this.Close();
     }
 }

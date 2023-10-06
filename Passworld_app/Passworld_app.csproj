@@ -29,6 +29,33 @@
       <Content Include="img\edit-pwd.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <None Remove="Fonts\SpaceGrotesk-Bold.ttf" />
+      <Content Include="Fonts\SpaceGrotesk-Bold.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Fonts\SpaceGrotesk-Light.ttf" />
+      <Content Include="Fonts\SpaceGrotesk-Light.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Fonts\SpaceGrotesk-Regular.ttf" />
+      <Content Include="Fonts\SpaceGrotesk-Regular.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Fonts\SpaceGrotesk-SemiBold.ttf" />
+      <Content Include="Fonts\SpaceGrotesk-SemiBold.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Fonts\SpaceGrotesk-VariableFont_wght.ttf" />
+      <Content Include="Fonts\SpaceGrotesk-VariableFont_wght.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Fonts\SpaceGrotesk-Medium.ttf" />
+      <Compile Include="Fonts\SpaceGrotesk-Medium.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Compile>
     </ItemGroup>
 
 </Project>
